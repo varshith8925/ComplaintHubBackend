@@ -21,7 +21,6 @@ public class DataInitializer {
                 admin.setPassword(passwordEncoder.encode("admin123"));
                 admin.setRole(Role.SUPER_ADMIN);
                 admin.setApproved(true);
-                admin.setMobileNumber("0000000000");
                 
                 userRepo.save(admin);
                 System.out.println("✅ Default Super Admin created! Email: admin@complainthub.com | Password: admin123");
